@@ -4,6 +4,9 @@
 
 #ifndef SNIPPET_NUMBERGENERATOR_H
 #define SNIPPET_NUMBERGENERATOR_H
+
+#include "GlobalDefinition.h"
+
 class NumberGenerator
 {
 public:
@@ -12,5 +15,6 @@ public:
 
 private:
     void swap(int &a, int &b);
+    DISABLE_ASSIGN_AND_COPY(NumberGenerator)
 };
 #endif //SNIPPET_NUMBERGENERATOR_H

@@ -3,5 +3,5 @@ project(Snippet)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-set(SOURCE_FILES main.cpp NumberGenerator.h NumberGenerator.cpp)
+set(SOURCE_FILES main.cpp NumberGenerator.h NumberGenerator.cpp GlobalDefinition.h)
 add_executable(Snippet ${SOURCE_FILES})
