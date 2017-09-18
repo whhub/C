@@ -2,10 +2,13 @@
 //
 
 #include "stdafx.h"
+#include "Host.h"
 
 
 int _tmain(int argc, _TCHAR* argv[])
 {
+	auto host = new Host();
+	host->CallBack();
 	return 0;
 }
 
