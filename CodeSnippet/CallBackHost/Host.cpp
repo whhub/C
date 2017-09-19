@@ -1,8 +1,5 @@
 #include "Host.h"
 
-#include <iostream>
-using namespace std;
-
 
 Host::Host(void)
 {
@@ -13,7 +10,7 @@ Host::~Host(void)
 {
 }
 
-void Host::CallBack()
+void Host::CallBack(const string &message)
 {
-	cout << "Call Back in Host" << endl;
+	cout << "Host Received Message [" << message.c_str() << "]" << endl;
 }

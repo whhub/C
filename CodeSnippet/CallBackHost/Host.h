@@ -6,11 +6,14 @@
 #define CallBackHost_Export __declspec (dllimport)
 #endif
 
+#include <iostream>
+using namespace std;
+
 class CallBackHost_Export Host
 {
 public:
 	Host(void);
 	~Host(void);
-	void CallBack();
+	void CallBack(const string & message);
 };
 

@@ -6,11 +6,21 @@
 #define CallBackClient_Export __declspec (dllimport)
 #endif
 
+#include <boost/bind.hpp>   
+#include <boost/function.hpp>  
+
+using namespace std;
+
+typedef boost::function<void(const string&)> Action;
+
 class CallBackClient_Export Client
 {
 public:
 	Client(void);
 	~Client(void);
 	void Call();
+	void SetCallBack(Action action);
+private:
+	Action _action;
 };
 

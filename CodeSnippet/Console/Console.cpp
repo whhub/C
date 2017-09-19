@@ -9,9 +9,11 @@
 int _tmain(int argc, _TCHAR* argv[])
 {
 	auto host = new Host();
-	host->CallBack();
 
 	auto client = new Client();
+	client->SetCallBack(boost::bind(&Host::CallBack, host, _1));
+
+	client->Call();
 
 	return 0;
 }
