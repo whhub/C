@@ -6,7 +6,7 @@
 #include "Client.h"
 
 
-int _tmain(int argc, _TCHAR* argv[])
+void TestCallBack()
 {
 	auto host = new Host();
 
@@ -14,6 +14,13 @@ int _tmain(int argc, _TCHAR* argv[])
 	client->SetCallBack(boost::bind(&Host::CallBack, host, _1));
 
 	client->Call();
+}
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	TestCallBack();
+
+
 
 	return 0;
 }
