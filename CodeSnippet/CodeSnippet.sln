@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MultiThread", "MultiThread"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CallBack", "CallBack", "{36C40926-E01D-4A6F-A918-4D94DC007FFA}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MultiThreadConsole", "MultiThreadConsole\MultiThreadConsole.vcxproj", "{409690DD-73DA-4679-A653-0CBA77B64285}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -29,11 +31,16 @@ Global
 		{2BEEC2F7-DC8E-4D75-97D2-1B29F3777182}.Debug|Win32.Build.0 = Debug|Win32
 		{2BEEC2F7-DC8E-4D75-97D2-1B29F3777182}.Release|Win32.ActiveCfg = Release|Win32
 		{2BEEC2F7-DC8E-4D75-97D2-1B29F3777182}.Release|Win32.Build.0 = Release|Win32
+		{409690DD-73DA-4679-A653-0CBA77B64285}.Debug|Win32.ActiveCfg = Debug|Win32
+		{409690DD-73DA-4679-A653-0CBA77B64285}.Debug|Win32.Build.0 = Debug|Win32
+		{409690DD-73DA-4679-A653-0CBA77B64285}.Release|Win32.ActiveCfg = Release|Win32
+		{409690DD-73DA-4679-A653-0CBA77B64285}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{409690DD-73DA-4679-A653-0CBA77B64285} = {34069AA0-E0FB-48BA-A14A-39742618548E}
 		{CBE541DA-65BA-4913-9268-20CF76ACC13C} = {36C40926-E01D-4A6F-A918-4D94DC007FFA}
 		{979102A6-52C8-42EC-B82E-3F4B2F49DC83} = {36C40926-E01D-4A6F-A918-4D94DC007FFA}
 	EndGlobalSection
