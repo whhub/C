@@ -42,3 +42,6 @@ int main()
 	cin.get();
 	return 0;
 }
+
+
+//ref: http://www.cppblog.com/shaker/archive/2011/11/30/33583.html
