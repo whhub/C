@@ -2,8 +2,8 @@
 
 #include <boost/thread/thread.hpp>
 
-#include "mutex.h"
 #include "Count.h"
+#include "counting.h"
 
 using namespace std;
 
@@ -16,14 +16,7 @@ void thread_work()
 
 
 
-void counting(int id)
-{
-	for (int i=0; i<5; ++i)
-	{
-		boost::mutex::scoped_lock lock(io_mutex);
-		cout << id << ":" << i << endl;
-	}
-}
+
 
 
 void TestMultiThread()
