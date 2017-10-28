@@ -2,6 +2,8 @@
 
 #include <boost/thread/thread.hpp>
 
+#include "mutex.h"
+
 using namespace std;
 
 void thread_work()
@@ -9,7 +11,6 @@ void thread_work()
 	cout << "Hello thread" << endl;
 }
 
-boost::mutex io_mutex;
 
 struct Count
 {
