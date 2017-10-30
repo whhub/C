@@ -2,6 +2,7 @@
 
 #include <boost/thread/thread.hpp>
 #include <boost/thread/condition.hpp>
+#include <boost/thread/once.hpp>
 
 #include "Count.h"
 #include "counting.h"
@@ -127,10 +128,36 @@ void TestProducerAndConsumer()
 	thrd2.join();
 }
 
+
+int iFlag = 0;
+boost::once_flag flag = BOOST_ONCE_INIT;
+
+void init()
+{
+	++iFlag;
+}
+
+void call_once_thread()
+{
+	boost::call_once(&init, flag);
+}
+
+void TestCallOnceFlag()
+{
+	boost::thread thrd1(call_once_thread);
+	boost::thread thrd2(call_once_thread);
+
+	thrd1.join();
+	thrd2.join();
+
+	cout << "iFlag : " << iFlag << endl;
+}
+
 int main()
 {
-	TestMultiThread();
+	//TestMultiThread();
 	//TestProducerAndConsumer();
+	TestCallOnceFlag();
 
 	cout << "Press Any key to exit" << endl;
 	cin.get();
