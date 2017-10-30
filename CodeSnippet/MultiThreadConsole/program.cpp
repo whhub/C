@@ -129,8 +129,8 @@ void TestProducerAndConsumer()
 
 int main()
 {
-	//TestMultiThread();
-	TestProducerAndConsumer();
+	TestMultiThread();
+	//TestProducerAndConsumer();
 
 	cout << "Press Any key to exit" << endl;
 	cin.get();
